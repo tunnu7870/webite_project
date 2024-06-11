@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>ORIENTAL TASK</title>
+</head>
+<style>
+    .container a h2{
+        color: #38438c;
+    }
+    .nav_image img {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+
+    }
+
+    .nav_links {
+        display: flex;
+        align-items: center;
+    }
+
+    .link a {
+        color: #38438c;
+    }
+
+    .carousel_section {
+        max-height: 70vh;
+    }
+
+    .carousel_section .carousel-item img {
+        max-height: 75vh;
+        object-fit: cover;
+    }
+
+    .carousel-item h1 {
+        text-align: center;
+        font-size: 80px;
+    }
+
+
+    .carousel_images img {
+        width: 100%;
+        height: auto;
+        max-height: 600px;
+        object-fit: cover;
+    }
+
+    .about {
+        padding: 66px 0px 0px 0px;
+    }
+
+    .h4_color {
+        color: #fab916;
+    }
+
+    .about h6 {
+        padding: 25px 0px;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 17px;
+    }
+
+    .about a button {
+        background-color: white;
+        color: black;
+        border-color: black;
+        padding: 10px 22px 10px 22px;
+        font-weight: 14px;
+
+    }
+
+    .about a button i {
+        transform: rotate(-43deg);
+    }
+
+    .services {
+        text-align: center;
+    }
+
+    .services h2 {
+        font-weight: bolder;
+    }
+
+    .services p {
+        font-size: 12px;
+    }
+
+    .icon_box {
+        display: inline-block;
+        background-color: rgba(232 244 255);
+        padding: 7px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .testimonial{
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+    .col{
+      margin-top: 97px;
+      margin-left: -87px;
+    }
+    #btn{
+      background-color: white;
+      border-radius: 10px;
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 23px;     
+    }
+    #staryellow{
+        color: rgb(236, 236, 100);
+    
+    }
+    #testshadow{
+        box-shadow:1px 1px 5px 0px rgb(0 0 0 / 19%);
+        width: 100%;
+        max-width:305px;
+        height: auto;
+        border-radius: 6px;
+    }
+    .lt{
+        text-align: left;
+        padding: 19px 19px;
+    }
+    i.icon_color{
+        background-color:#7070dd;
+        border-radius: 5px;
+        box-shadow: 2px 0px 4px -2px #3a3737;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin-bottom:23px;
+    }
+    .paragraph{
+        padding: 10px 0px 0px 16px ;
+        text-align: left;
+    }
+    .pg{
+        text-align: left;
+    }
+    .footer{
+        background-color: #202124;
+        padding: 60px 0px 0px 0px;
+    }
+    .footer_text{
+        color: white;
+        padding: 0px 85px 19px 122px;
+    }
+    .footer_para{
+        padding-right: 243px;
+    }
+    #footer_icon{
+        padding-right: 7px;
+    }
+    .footer_text ul li{
+        list-style-type: none;
+    }
+    .footer_about{
+        padding-left: 216px;
+    }
+    .footer_about_2{
+        padding-left: 121px;
+    }
+    .hr_color{
+        background: #fff;
+    }
+    
+</style>
+
+<body>
+    <!-- nav bar -->
+    <div class="container-fluid px-0 justify-content-center">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand nav_image" href="#"><h2>Shantanu Web Services</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav_links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item link">
+                            <a class="nav-link" href="/login.html" target="_blank">Login</a>
+                        </li>
+                        <li class="nav-item link ">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link" href="#"><button type="button" class="btn btn-primary">Contact
+                                    us</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- carousel -->
+    <section class="carousel_section">
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./it1.jpg" class="d-block w-100" alt=" About">
+                    <div class="container">
+                        <div class="carousel-caption pb-5">
+                            <h1>Affordable IT</h1>
+                            <h1>Solution</h1>
+                            <p><a class="btn   btn-lg btn-primary rounded-pill px-3" href="#">Explore Now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./it2.jpeg" class="d-block w-100" alt=" About">
+                    <div class="container">
+                        <div class="carousel-caption pb-5">
+                            <h1>Affordable IT</h1>
+                            <h1>Solution</h1>
+                            <p><a class="btn btn-lg btn-primary rounded-pill px-3" href="#">Explore Now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./it3.jpg" class="d-block w-100" alt=" About">
+                    <div class="container">
+                        <div class="carousel-caption pb-5">
+                            <h1>Affordable IT</h1>
+                            <h1>Solution</h1>
+                            <p><a class="btn btn-lg btn-primary rounded-pill px-3" href="#">Explore Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+    <!-- our purpose -->
+    <section class="about">
+        <div class="container my-5">
+            <div class="row featurette">
+                <div class="col-md-6 sm-12 order-md-1 text-center">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" src="./about img.jpg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <!-- <title>Placeholder</title> -->
+                    <rect width="100%" height="100%" fill="#eee" />
+                </div>
+                <div class="col-md-6 sm-12 order-md-2 d-flex justify-content-center align-items-center">
+                    <div>
+                        <h4 class=" pt-3  h4_color">OUR PURPOSE</h4>
+                        <h1 class="featurette-heading">Why Human Like Robot?</h1>
+                        <h6 class="lead">Robots Will Soon Be Everywhere. How Can We Nature Them TO Be Our
+                            Friends And Useful Collaboratos?Robot With Good
+                            Aesthetic Design, Rich Personalities, And Social Congnitive
+                            Intelligance
+                        </h6>
+                        <!-- <p><a class="btn btn-outline-primary" href="#">Read More <i
+                                    class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 60deg;"></i></a>
+                                </p> -->
+                        <a href="#"><button class="btn btn-primary">Read more <i
+                                    class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- our services -->
+    <section>
+        <div class="services ">
+            <div class="container py-4">
+                <h2 class="mt-3">Our Services</h2>
+                <div class="container mt-5 mb-3 services ">
+                    <div class="row mt-3 ">
+                        <div class="col-lg-3 col-md-6 col-12  px-4  ">
+                            <div class="icon_box  ">
+                                <i class="fa-regular fa-comments  icon "></i>
+                            </div>
+                            <h4 class="mt-3">
+                                Task comments
+                            </h4>
+                            <p>Id molils consectetur congue egestas egestas suspendisse
+                                blandit
+                                justo</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-4">
+                            <div class="icon_box  ">
+                                <i class="fa-solid fa-chart-line icon"></i>
+                            </div>
+                            <h4 class="mt-3">
+                                Task Analytics
+                            </h4>
+                            <p>Augue pulvinar fermentum fames aliquamant accusan
+                                vestibulim</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-4">
+                            <div class="icon_box  ">
+                                <i class="fa-regular fa-bell icon "></i>
+                            </div>
+                            <h4 class="mt-3">
+                                Notifications
+                            </h4>
+                            <p>Mattis ultricies non amet, purus in auctor non. Odio
+                                vulputate ac
+                                nibh </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-4">
+                            <div class="icon_box">
+                                <i class="fa-solid fa-list-check icon"></i>
+                            </div>
+                            <h4 class="mt-3">
+                                Section & Subtasks
+                            </h4>
+                            <p> A elementum, imperdiet, pretuium etiam facilisi in aenean
+                                mauris.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3 ">
+                        <div class="next col-lg-3 col-md-6 col-12 px-4 ">
+                            <div class="icon_box  ">
+                                <i class="fa-regular fa-calendar-check icon"></i>
+                            </div>
+                            <h4 class="mt-3">
+                                Progress Tracking
+                            </h4>
+                            <p> Sit facilisis arcu, fermentum vestibulum arcu elementum
+                                imperdiet
+                                eleifend.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-4">
+                            <div class="icon_box  ">
+                                <i class="fa-solid fa-users icon"></i>
+                            </div>
+                            <h4 class="mt-3">Multiple Assignees</h4>
+                            <p>Faucibus cursus maecenas lorem cursus nibh.
+                                Sociis sit risus id. Sit facilisis dolor arcu
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-4 ">
+                            <div class="icon_box   ">
+                                <i class="fa-solid fa-headset icon"></i>
+                            </div>
+                            <h4 class="mt-3">
+                                support24/7
+                            </h4>
+                            <p>Sapien sed massa sit erat pellentesque
+                                pellentesque nisl, elementum.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-4 ">
+                            <div class="icon_box  ">
+                                <i class="fa-solid fa-shield-halved icon"></i>
+                            </div>
+                            <h4 class="mt-03">
+                                Data Security
+                            </h4>
+                            <p>Aliquet felis facillisi sem nunc.Sapien fermentum,
+                                fringilla
+                                molestie lorem nec.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial -->
+    <section class="testimonial">
+        <div class="container">
+            <!-- <h2 
+                class="text-sm-center text-md-center text-lg-center fw-bolder pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5 pb-1 pb-sm-2 pb-md-3 pb-lg-4 pb-xl-5">
+                Testimonial</h2> -->
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="text-sm-left text-md-left text-lg-left">What</h3>
+                    <h3 class="text-sm-left text-md-left text-lg-left ">People Say</h3>
+                    <h3 class="text-sm-left text-md-left text-lg-left"> About App:</h3>
+                </div>
+                <div class=" col-md-3 justify-content-left ">
+                    <div class=" lt" id="testshadow">
+                        <i class="fa-solid fa-quote-left icon_color"></i>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Enim
+                            explicabo neque facere repellat amet
+                            inventore corrupti quis officiis ullam, asperiores earum
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <h6>Robert Fox</h6>
+                        <p>Founder Of Lorem Company</p>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-left ">
+                    <div class="lt" id="testshadow">
+                        <i class="fa-solid fa-quote-left icon_color"></i>
+                        <p> Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit. Enim
+                            explicabo neque facere repellat amet
+                            inventore corrupti quis officiis ullam, asperiores earum
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <h6>Annette Black</h6>
+                        <p>Founder Of Lorem Company</p>
+                    </div>
+                </div>
+                <div class="col-md-3 justify-content-left">
+                    <div class="lt" id="testshadow">
+                        <i class="fa-solid fa-quote-left icon_color"></i>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Enim
+                            explicabo neque facere repellat amet
+                            inventore corrupti quis officiis ullam, asperiores earum
+                        </p>
+                        <div>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-solid fa-star" id="staryellow"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <h6>Jerome Bell</h6>
+                        <p>Founder Of Lorem Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="cointainer footer_text">
+            <div class="row">
+                <div class="col-lg-6">
+                        <h3>Shantanu Web Services</h3>
+                   <div class="footer_para">
+                      <p>You Can contact us for make your website </p>
+                   </div>
+                   <div>
+                    <i class="fa-brands fa-square-facebook icon_col" id="footer_icon"></i>
+                    <i class="fa-brands fa-instagram  icon_col" id="footer_icon"></i>
+                    <i class="fa-brands fa-square-twitter icon_col " id="footer_icon"></i>
+                    <i class="fa-brands fa-linkedin icon_col" id="footer_icon"></i>
+                    <i class="fa-brands fa-square-youtube icon_col" id="footer_icon"></i>
+                   </div>
+                </div>
+                <div class="col-lg-3 footer_about">
+                    <ul>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li> Sign in</li>
+                        <li>sign up</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li>Documemts</li>
+                        <li>Faqs</li>
+                        <li>Privacy Policy</li>
+                        <li>News and Blogs</li>
+                        <li>Term & Condition</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr class="hr_color">
+            <div class="row">
+                <div class="col-lg-8 ">
+                    <pr>Copyrights &#169 2024 Oriental Outsourcing.</pr>
+                </div>
+                <div class="col-lg-2 footer_about_2">
+                    <pr>Privacy Policy</pr>
+                </div>
+                <div class="col-lg-2 ">
+                    <pr>Term & conditions</pr>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/983d0b3247.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
